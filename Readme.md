@@ -48,55 +48,9 @@ API Documentation: Swagger UI, Swagger JSDoc
 ORM: Mongoose (for MongoDB)
 Environment Management: dotenv
 Security: Role-based access control with middleware for user authentication and authorization
-Setup Instructions
-Installation
-Clone this repository to your local machine:
 
-bash
-Copy code
-git clone https://github.com/your-username/task-manager-api.git
-Navigate to the project directory:
 
-bash
-Copy code
-cd task-manager-api
-Install project dependencies:
 
-bash
-Copy code
-npm install
-Environment Configuration
-Before running the project, make sure to configure the environment variables by creating a .env file in the root directory. Below are the required variables:
-
-env
-Copy code
-PORT=8000
-MONGO_URI=mongodb://localhost:27017/taskmanager
-JWT_SECRET=your_jwt_secret
-PORT: The port on which the server will run.
-MONGO_URI: MongoDB connection string (can be local or from MongoDB Atlas).
-JWT_SECRET: Secret key used to sign JWT tokens (ensure this is a secure value).
-Run the Project
-To run the project in development mode:
-
-bash
-Copy code
-npm run dev
-The server will start on http://localhost:8000.
-
-API Documentation
-The API is documented using Swagger UI. To view the interactive API documentation:
-
-Start the server as described above.
-Visit http://localhost:8000/api/api-docs in your browser.
-Authentication
-This API uses JWT-based authentication for securing routes. To authenticate, you must include the JWT token in the Authorization header of the request, like this:
-
-bash
-Copy code
-Authorization: Bearer <your-jwt-token>
-Sign Up: POST request to /api/signup to create a new user.
-Sign In: POST request to /api/signin to receive a JWT token.
 Task Management
 Create Task (Admin Only):
 POST request to /api/tasks with the task data.
