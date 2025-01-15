@@ -70,7 +70,7 @@ Before running the project, make sure to configure the environment variables by 
 
 env
 Copy code
-PORT=5000
+PORT=8000
 MONGO_URI=mongodb://localhost:27017/taskmanager
 JWT_SECRET=your_jwt_secret
 PORT: The port on which the server will run.
@@ -82,13 +82,13 @@ To run the project in development mode:
 bash
 Copy code
 npm run dev
-The server will start on http://localhost:5000.
+The server will start on http://localhost:8000.
 
 API Documentation
 The API is documented using Swagger UI. To view the interactive API documentation:
 
 Start the server as described above.
-Visit http://localhost:5000/api/api-docs in your browser.
+Visit http://localhost:8000/api/api-docs in your browser.
 Authentication
 This API uses JWT-based authentication for securing routes. To authenticate, you must include the JWT token in the Authorization header of the request, like this:
 
