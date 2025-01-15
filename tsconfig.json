@@ -8,6 +8,6 @@
     "forceConsistentCasingInFileNames": true,
     "outDir": "./dist"
   },
-  "include": ["src/**/*.ts", ".env"],
+  "include": ["src/**/*.ts", ".env", "src/swagger/swagger-options.js"],
     "exclude": ["node_modules"]
 }
